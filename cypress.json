@@ -1,0 +1,6 @@
+{
+  "baseUrl":"https://petgram-server-luis.luisyupanqui.now.sh/",
+  "chromeWebSecurity":false,
+  "viewPortWidth":500,
+  "viewPortHeight":800
+}

@@ -1,0 +1,54 @@
+{
+  "homepage": "https://lout33.github.io/Petgram",
+  "name": "curso-platzi-react-avanzado",
+  "version": "1.0.0",
+  "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --history-api-fallback",
+    "build": "webpack",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s",
+    "test": "cypress open",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "cypress": "^3.8.0",
+    "gh-pages": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-pwa-manifest": "^4.1.1",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.5.8",
+    "intersection-observer": "^0.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
+    "styled-components": "^4.4.1"
+  }
+}
