@@ -10,7 +10,7 @@
     "serve:dev": "webpack --mode 'development' && npx serve dist -s",
     "test": "cypress open",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

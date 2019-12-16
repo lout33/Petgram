@@ -20,11 +20,11 @@ export const PhotoCard = ({ id, liked, likes = 0, src }) => {
           </Link>
           <ToggleLikeMutation>
             {toggleLike => {
-              [callAlert, setCallAlert] = useState(false);
+              // [callAlert, setCallAlert] = useState(false);
               const handleFavClick = () => {
-                if (!isAuth) {
-                  setCallAlert(true);
-                }
+                //   if (!isAuth) {
+                //     setCallAlert(true);
+                //   }
                 toggleLike({ variables: { input: { id } } });
               };
               return (
@@ -33,7 +33,7 @@ export const PhotoCard = ({ id, liked, likes = 0, src }) => {
                     liked={liked}
                     likes={likes}
                     onClick={handleFavClick}
-                    callAlert={callAlert}
+                    // callAlert={callAlert}
                   ></FavButton>
                 </Fragment>
               );
